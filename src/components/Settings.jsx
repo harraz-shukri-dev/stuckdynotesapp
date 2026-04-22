@@ -434,7 +434,7 @@ export default function Settings() {
           onMouseLeave={(e) => { e.target.style.color = 'var(--text-muted)' }}
           title="Visit razdevplus.com"
         >
-          DEVELOPED BY RAZDEVPLUS SOLUTIONS GLOBAL
+          DEVELOPED WITH ❤️ BY RAZDEVPLUS SOLUTIONS GLOBAL
         </span>
       </div>
     </div>
