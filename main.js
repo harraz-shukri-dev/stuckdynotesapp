@@ -186,5 +186,8 @@ ipcMain.handle('check-for-updates', () => {
 })
 
 ipcMain.handle('install-update', () => {
-  if (!isDev) autoUpdater.quitAndInstall()
+  if (!isDev) {
+    if (tray) tray.destroy()
+    autoUpdater.quitAndInstall()
+  }
 })
