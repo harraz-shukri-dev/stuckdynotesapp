@@ -1,6 +1,6 @@
 {
   "name": "stuckdynotes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/harraz-shukri-dev/stuckdynotesapp.git"
@@ -39,6 +39,7 @@
   },
   "build": {
     "appId": "com.razdevplus.stuckdynotes",
+    "artifactName": "${productName}-Setup-${version}.${ext}",
     "publish": [
       {
         "provider": "github",

@@ -78,13 +78,6 @@ function createWindow() {
   if (isDev) mainWindow.webContents.openDevTools({ mode: 'detach' })
   })
 
-  // Hide to tray on close
-  mainWindow.on('close', (e) => {
-    if (tray) {
-      e.preventDefault()
-      mainWindow.hide()
-    }
-  })
 }
 
 // ─── System Tray ───────────────────────────────────────────────────────────────
@@ -171,7 +164,7 @@ ipcMain.handle('window-minimize', () => mainWindow.minimize())
 ipcMain.handle('window-maximize', () => {
   mainWindow.isMaximized() ? mainWindow.unmaximize() : mainWindow.maximize()
 })
-ipcMain.handle('window-close', () => mainWindow.hide())
+ipcMain.handle('window-close', () => app.quit())
 ipcMain.handle('window-quit', () => { tray?.destroy(); app.exit(0) })
 
 ipcMain.handle('toggle-always-on-top', (_, value) => {
