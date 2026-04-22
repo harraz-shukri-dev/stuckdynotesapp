@@ -1,9 +1,9 @@
 {
   "name": "stuckdynotes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/your-repo-name.git"
+    "url": "https://github.com/harraz-shukri-dev/stuckdynotesapp.git"
   },
   "productName": "StuckDyNotes",
   "description": "Smart sticky notes widget for students and employees",
