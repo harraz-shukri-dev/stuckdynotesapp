@@ -1,6 +1,6 @@
 {
   "name": "stuckdynotes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/harraz-shukri-dev/stuckdynotesapp.git"
@@ -42,8 +42,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "your-username",
-        "repo": "your-repo-name"
+        "owner": "harraz-shukri-dev",
+        "repo": "stuckdynotesapp"
       }
     ],
     "productName": "StuckDyNotes",
@@ -57,7 +57,6 @@
       "main.js",
       "preload.js",
       "assets/**/*",
-      "!node_modules/**/*",
       "!src/**/*",
       "!release/**/*"
     ],
